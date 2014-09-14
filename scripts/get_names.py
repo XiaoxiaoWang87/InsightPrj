@@ -1,3 +1,7 @@
+
+# get all players (since 1980) game log data
+# regular season / playoffs
+
 import pandas as pd
 import numpy as np
 import json
@@ -27,7 +31,7 @@ class GameLog:
         return pd.DataFrame(self._x['resultSets'][0]['rowSet'],columns=self._x['resultSets'][0]['headers'])
 
 
-with open("names.json", 'r') as file_handle:
+with open("../json/names.json", 'r') as file_handle:
     names = json.load(file_handle)
     #print names
     all_players = pd.DataFrame(names['resultSets'][0]['rowSet'], columns=names['resultSets'][0]['headers'])
@@ -47,8 +51,8 @@ with open("names.json", 'r') as file_handle:
         player_gamelog_df = player_gamelog.log()
         if index == 0: 
             #player_gamelog_df.to_csv('player_gamelog.csv', sep='\t', index=False)
-            player_gamelog_df.to_csv('player_playoffs_gamelog.csv', sep='\t', index=False)
+            player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', sep='\t', index=False)
         else:
-            player_gamelog_df.to_csv('player_playoffs_gamelog.csv', mode='a', sep='\t', header=False, index=False)
+            player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', mode='a', sep='\t', header=False, index=False)
 
 

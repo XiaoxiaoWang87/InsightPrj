@@ -1,3 +1,5 @@
+
+# get nba all-stars for east and west leagues since 1950
 #http://stats.nba.com/stats/commonteamroster/?Season=2001-02&LeagueID=00&TeamID=1610616833&SeasonType=All+Star
 
 import pandas as pd
@@ -45,11 +47,11 @@ for i in range(1950, 2014):
     west_df = allstar_log['west'].log()
 
     if index == 0:
-        east_df.to_csv('allstar_log.csv', sep='\t', index=False)
-        west_df.to_csv('allstar_log.csv', mode='a', sep='\t', header=False, index=False)
+        east_df.to_csv('../log/allstar_log.csv', sep='\t', index=False)
+        west_df.to_csv('../log/allstar_log.csv', mode='a', sep='\t', header=False, index=False)
     else:
-        east_df.to_csv('allstar_log.csv', mode='a', sep='\t', header=False, index=False)
-        west_df.to_csv('allstar_log.csv', mode='a', sep='\t', header=False, index=False)
+        east_df.to_csv('../log/allstar_log.csv', mode='a', sep='\t', header=False, index=False)
+        west_df.to_csv('../log/allstar_log.csv', mode='a', sep='\t', header=False, index=False)
 
     index = index + 1
 

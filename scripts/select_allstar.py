@@ -27,7 +27,7 @@ class GameLog:
 
 
 allstar_list = []
-allstar_df = pd.read_csv('allstar_log.csv',sep='\t')
+allstar_df = pd.read_csv('../log/allstar_log.csv',sep='\t')
  
 counter = 0
 for index, row in allstar_df.iterrows():
@@ -51,8 +51,8 @@ for index, row in allstar_df.iterrows():
     allstar_gamelog_df = player_gamelog.log()
 
     if counter == 0: 
-        allstar_gamelog_df.to_csv('allstar_gamelog.csv', sep='\t', index=False)
+        allstar_gamelog_df.to_csv('../log/allstar_gamelog.csv', sep='\t', index=False)
     else:
-        allstar_gamelog_df.to_csv('allstar_gamelog.csv', mode='a', sep='\t', header=False, index=False)
+        allstar_gamelog_df.to_csv('../log/allstar_gamelog.csv', mode='a', sep='\t', header=False, index=False)
 
     counter = counter+1
