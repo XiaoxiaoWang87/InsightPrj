@@ -1,0 +1,18 @@
+{
+  "resource":"commonteamroster",
+
+  "parameters":{
+  	"TeamID":1610616833,
+	"LeagueID":"00",
+	"Season":"2001-02"
+  },
+
+  "resultSets":[
+	{
+		"name":"CommonTeamRoster",
+		"headers":["TeamID","SEASON","LeagueID","PLAYER","NUM","POSITION","HEIGHT","WEIGHT","BIRTH_DATE","AGE","EXP","SCHOOL","PLAYER_ID"],
+		"rowSet":[ [1610616833,"2001","00","Baron Davis","1","G","6-3","223","APR 13, 1979",22,"2","UCLA",1884],[],[] ]
+        }
+  ]
+
+}

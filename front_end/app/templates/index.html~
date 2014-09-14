@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/starter-template.css" rel="stylesheet">
+
+    <link href="static/center.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Rising All-star</a> 
+        </div>
+         <div class="collapse navbar-collapse">                          
+           <ul class="nav navbar-nav">                     
+             <li class="active"><a href="#">Home</a></li>  
+        <!--/     <li><a href="#about">About</a></li>           -->
+        <!--/     <li><a href="#contact">Contact</a></li>       -->
+           </ul>                     	
+        </div>    <!--/.nav-collapse -->			
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="starter-template">
+
+        <div id="Page1" class="container">
+
+        <h1>The Rising All-star</h1>
+        <p class="lead">A Web application that helps you predict future NBA super stars<br>and identify their career potentials.</p>
+      </div>
+
+        <div class="btn-group">
+        <p style="font-size:120%">Number of Games Played</p>
+           <select id = 'N' class="form-control">
+               <option value="10">10</option>  
+               <option value="50">50</option>   
+               <option value="100">100</option>
+               <option value="150">150</option>
+               <option value="200">200</option>
+           </select>
+
+        </div>
+        </div>
+    </div><!-- /.container -->
+
+
+
+    <div class="container">
+    <div class="starter-template">
+    </div>
+    </div>
+
+
+    <div class="container">
+     <div class="row">
+
+      <div class="col-lg-4">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Average # Points (PTS)</button>  
+          </span>
+          <input id='PTS' type="text" class="form-control">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+
+      <div class="col-lg-4">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Average # Assits (AST)</button>
+          </span>
+          <input id='AST' type="text" class="form-control">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+
+      <div class="col-lg-4">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Average # Rebounds (REB)</button>
+          </span>
+          <input id='REB' type="text" class="form-control">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+
+
+    <div class="container">
+    <div class="starter-template">
+     <p><a id ='GO' class="btn btn-primary btn-lg" role="button">Go</a></p>
+    </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery.js"></script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var submit_form = function(e) {
+            $.getJSON($SCRIPT_ROOT + '/regression', {
+            a: $('#PTS').val(),
+            b: $('#AST').val(),
+            c: $('#REB').val(),
+            d: $('#N').val()
+          }, function(data) {
+            $('#result1').text(data.result[0]);
+            $('#result2').text(data.result[1]);
+          });
+          return false;
+        };
+    
+        $('#GO').bind('click', submit_form);
+
+        $( "#GO" ).click(function() {
+          $( "#Page1" ).animate({
+            opacity: 0.25,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+          $( "#GO" ).animate({
+            opacity: 0.25,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+        });
+    
+      });
+
+    </script>
+
+<div id="Page2" class="container">
+<p><img src = "../static/images/pts_dist.jpg" width="380" height="280" alt="" /> <img src = "../static/images/ast_dist.jpg" width="380" height="280" alt="" /> <img src = "../static/images/reb_dist.jpg" width="380" height="280" alt="" />
+<h1 style="font-size:200%">The probability of becoming a future NBA star is (in %): <div id="result1"></div>  </h1>
+<h1 style="font-size:200%">with a confidence (in %): <div id="result2"></div></h1>
+  </body>
+</html>
+
+</div>
+
+    <script type="text/javascript">
+      $(function() {
+        $("#Page2").hide();
+        $( "#GO" ).click(function() {
+         $("#Page2").show();
+        });
+    
+    });
+
+    </script>
+

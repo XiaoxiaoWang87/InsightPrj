@@ -1,0 +1,13 @@
+playerinfocallback({
+	"resource":"commonallplayers",
+	"parameters":{
+		"LeagueID":"00",
+		"Season":"2013-14",
+		"IsOnlyCurrentSeason":0
+        },
+	"resultSets":[{
+		"name":"CommonAllPlayers",
+		"headers":["PERSON_ID","DISPLAY_LAST_COMMA_FIRST","ROSTERSTATUS","FROM_YEAR","TO_YEAR","PLAYERCODE"],
+		"rowSet":[[76001,"Abdelnaby, Alaa",0,"1990","1994","HISTADD_alaa_abdelnaby"],[]]
+        }]
+})

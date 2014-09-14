@@ -1,0 +1,23 @@
+
+{
+"resource":
+
+	"playergamelog",
+
+ 	"parameters":{
+ 		"PlayerID":893,
+		"LeagueID":null,
+		"Season":"ALL",
+		"SeasonType":
+		"Regular Season"
+ 	},
+
+ 	"resultSets":[
+		{
+          		"name":"PlayerGameLog",
+	  		"headers":["SEASON_ID","Player_ID","Game_ID","GAME_DATE","MATCHUP","WL","MIN","FGM","FGA","FG_PCT","FG3M","FG3A","FG3_PCT","FTM","FTA","FT_PCT","OREB","DREB","REB","AST","STL","BLK","TOV","PF","PTS","PLUS_MINUS","VIDEO_AVAILABLE"],
+          		"rowSet": [["22002",893,"0020201178","APR 16, 2003","WAS @ PHI","L",28,6,15,0.400,0,0,0.000,3,4,0.750,0,4,4,4,0,0,2,0,15,-12,0],[]]
+        	}
+ 	]
+}
+
