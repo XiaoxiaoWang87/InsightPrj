@@ -18,6 +18,8 @@ Repository for Insight Data Science project. Develope forcasting models using th
 	7. Run analysis models here
 
 
-Q: 
+Questions for myself: 
+
 	- I forgot what select_allstar.py does... Probably just some testing example during my development.
+
 	- Also, when I tried step 1 again, I found a slightly different json file. A bit weird but I'm too tired to figure out the exact reason..
