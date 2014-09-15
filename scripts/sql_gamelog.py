@@ -16,8 +16,8 @@ con = mdb.connect('localhost', 'root', '', 'gamelogdb')
 
 df = {}
 
-df['sig'] = pd.read_csv('allstar_post1980_sql_log.csv',sep='\t')
-df['bkg'] = pd.read_csv('nonstar_post1980_sql_log.csv',sep='\t')
+df['sig'] = pd.read_csv('../log/allstar_post1980_sql_log.csv',sep='\t')
+df['bkg'] = pd.read_csv('../log/nonstar_post1980_sql_log.csv',sep='\t')
 
 # features: a, b, c ...
 df['sig'].to_sql('star', con, 'mysql', 'replace')  #,'fail',True)
