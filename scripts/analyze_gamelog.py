@@ -95,9 +95,9 @@ def prepareSQL(f, grouped):
         out = f.replace('log','sql_log')
 
         if i ==0:
-            final_group.to_csv('../log/' + out + '.csv', sep='\t', index=False)
+            final_group.to_csv('../log/0914_' + out + '.csv', sep='\t', index=False)
         else:
-            final_group.to_csv('../log/' + out + '.csv', mode='a', sep='\t', header=False, index=False)
+            final_group.to_csv('../log/0914_' + out + '.csv', mode='a', sep='\t', header=False, index=False)
     
         i = i+1
 
@@ -119,7 +119,7 @@ def main():
         else:
             continue
         
-        if row['SEASON'] < 1980:
+        if float(row['SEASON']) < 1980:
             continue
         
         allstar_post1980_list.append(row['PLAYER_ID'])
@@ -132,7 +132,7 @@ def main():
     for star in allstar_post1980_list:
         print star, allstar_post1980_dict[star][0]
     
-    df['player_post1980_log'] = (pd.read_csv('../log/player_post1980_inclusive_log.csv',sep='\t')).fillna(0)
+    df['player_post1980_log'] = (pd.read_csv('../log/0914_player_post1980_inclusive_log.csv',sep='\t')).fillna(0)
     
     df['allstar_post1980_log'] = df['player_post1980_log'][(df['player_post1980_log']["Player_ID"].isin(allstar_post1980_list))]
     df['nonstar_post1980_log'] = df['player_post1980_log'][(~df['player_post1980_log']["Player_ID"].isin(allstar_post1980_list))]
