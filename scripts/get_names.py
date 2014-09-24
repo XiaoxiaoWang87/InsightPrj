@@ -39,20 +39,24 @@ with open("../json/names.json", 'r') as file_handle:
     for index, row in all_players.iterrows():
         #if index > 20:
 
-        if ["FROM_YEAR"] < 1980:
+        if float(row["FROM_YEAR"]) < 1980:
             continue
         #print row.get('PERSON_ID', np.nan)
         print row['PLAYERCODE']
-        #player_gamelog = GameLog(row['PERSON_ID'], 'ALL', 'Regular Season')
-        player_gamelog = GameLog(row['PERSON_ID'], 'ALL', 'Playoffs')
+        player_gamelog = GameLog(row['PERSON_ID'], 'ALL', 'Regular Season')
+        #player_gamelog = GameLog(row['PERSON_ID'], 'ALL', 'Playoffs')
         if player_gamelog.check() == 0:
             continue
         #print player_gamelog.log()
         player_gamelog_df = player_gamelog.log()
         if index == 0: 
             #player_gamelog_df.to_csv('player_gamelog.csv', sep='\t', index=False)
-            player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', sep='\t', index=False)
+            #player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', sep='\t', index=False)
+            player_gamelog_df.to_csv('../log/0914_player_gamelog.csv', sep='\t', index=False)
+            #player_gamelog_df.to_csv('../log/0914_player_playoffs_gamelog.csv', sep='\t', index=False)
         else:
-            player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', mode='a', sep='\t', header=False, index=False)
+            #player_gamelog_df.to_csv('../log/player_playoffs_gamelog.csv', mode='a', sep='\t', header=False, index=False)
+            player_gamelog_df.to_csv('../log/0914_player_gamelog.csv', mode='a', sep='\t', header=False, index=False)
+            #player_gamelog_df.to_csv('../log/0914_player_playoffs_gamelog.csv', mode='a', sep='\t', header=False, index=False)
 
 
