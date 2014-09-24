@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<!-- <title>Magister - Free html5 template by GetTemplate</title>  -->
+        <title>The Rising NBA All-star</title>
+
+	<!-- <link rel="shortcut icon" href="static/assets/images/gt_favicon.png"> -->
+	<link rel="shortcut icon" href="static/assets/images/NBA_AllStar_Game_2014.png">
+	<!-- Bootstrap itself -->
+	<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+        <link href="static/dist/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="static/assets/css/magister.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#themes">Themes</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="Page1" class="homepage">
+<!-- Main (Home) section -->
+<!-- <section class="section" id="head"> -->
+	<!-- <div class="container"> -->
+
+		<div class="row">
+       			<!-- <div id="Page1" class="container">  -->
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+                                
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">The Rising NBA All<span style="font-size:40%">&#9733;</span>Star</h1>
+				<!-- <h2 class="subtitle">Free html5 template by GetTemplate</h2> -->
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					A Web app that predicts rookie players' likelihood of becoming future NBA super stars<br>
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<!-- <p><a id ='GO' class="btn btn-default btn-lg">I'm curious about rookie NBA player: </a></p> -->
+ 				<p><a id ='GO' class="btn btn-primary btn-lg">I'm curious about rookie NBA player: </a></p>
+ 
+                        <!-- </div> -->
+                        <!-- </div> -->
+			<!-- <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">-->
+                                <input type="text" id="PlayerName" class = "myDropDown" list="json-datalist" placeholder="e.g. Adams, Steven">
+                                <datalist id="json-datalist">
+                		<!-- <select id = 'PlayerName' class="form-control">  -->
+                                   <option value="Adams, Steven">
+                                   <option value="Antetokounmpo, Giannis">
+                                   <option value="Antic, Pero">
+                                   <option value="Babb, Chris">
+                                   <option value="Bennett, Anthony">
+                                   <option value="Blue, Vander">
+                                   <option value="Brown, Lorenzo">
+                                   <option value="Bullock, Reggie">
+                                   <option value="Burke, Trey">
+                                   <option value="Buycks, Dwight">
+                                   <option value="Calathes, Nick">
+                                   <option value="Caldwell-Pope, Kentavious">
+                                   <option value="Canaan, Isaiah">
+                                   <option value="Carter-Williams, Michael">
+                                   <option value="Christmas, Dionte">
+                                   <option value="Clark, Ian">
+                                   <option value="Covington, Robert">
+                                   <option value="Crabbe, Allen">
+                                   <option value="Curry, Seth">
+                                   <option value="Daniels, Troy">
+                                   <option value="Datome, Gigi">
+                                   <option value="Davies, Brandon">
+                                   <option value="Dedmon, Dewayne">
+                                   <option value="Dellavedova, Matthew">
+                                   <option value="Dieng, Gorgui">
+                                   <option value="Edwards, Shane">
+                                   <option value="Faverani, Vitor">
+                                   <option value="Felix, Carrick">
+                                   <option value="Franklin, Jamaal">
+                                   <option value="Gobert, Rudy">
+                                   <option value="Goodwin, Archie">
+                                   <option value="Gutierrez, Jorge">
+                                   <option value="Hamilton, Justin">
+                                   <option value="Hardaway Jr., Tim">
+                                   <option value="Harris, Elias">
+                                   <option value="Hill, Solomon">
+                                   <option value="Hopson, Scotty">
+                                   <option value="Hummel, Robbie">
+                                   <option value="Jerrett, Grant">
+                                   <option value="Karasev, Sergey">
+                                   <option value="Kelly, Ryan">
+                                   <option value="Kuzmic, Ognjen">
+                                   <option value="Larkin, Shane">
+                                   <option value="Ledo, Ricky">
+                                   <option value="Len, Alex">
+                                   <option value="McCallum, Ray">
+                                   <option value="McCollum, CJ">
+                                   <option value="McLemore, Ben">
+                                   <option value="Mekel, Gal">
+                                   <option value="Mitchell, Tony">
+                                   <option value="Mitchell, Tony">
+                                   <option value="Muhammad, Shabazz">
+                                   <option value="Murphy, Erik">
+                                   <option value="Murry, Toure">
+                                   <option value="Muscala, Mike">
+                                   <option value="Nedovic, Nemanja">
+                                   <option value="Noel, Nerlens">
+                                   <option value="Nunnally, James">
+                                   <option value="Oladipo, Victor">
+                                   <option value="Olynyk, Kelly">
+                                   <option value="Onuaku, Arinze">
+                                   <option value="Plumlee, Mason">
+                                   <option value="Porter, Otto">
+                                   <option value="Pressey, Phil">
+                                   <option value="Raduljica, Miroslav">
+                                   <option value="Rice Jr., Glen">
+                                   <option value="Roberson, Andre">
+                                   <option value="Schroder, Dennis">
+                                   <option value="Siva, Peyton">
+                                   <option value="Smith, Chris">
+                                   <option value="Snell, Tony">
+                                   <option value="Southerland, James">
+                                   <option value="Stephens, DJ">
+                                   <option value="Thomas, Adonis">
+                                   <option value="Thompson, Hollis">
+                                   <option value="Ware, Casper">
+                                   <option value="Withey, Jeff">
+                                   <option value="Wolters, Nate">
+                                   <option value="Zeller, Cody">
+                                <!-- </select> -->
+                                </datalist>
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	<!-- </div> -->
+<!-- </section>  -->
+</div>
+
+
+<!--
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container">
+	
+		<h2 class="text-center title">About me</h2>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">    
+				<h5><strong>Where's my lorem ipsum?<br></strong></h5>
+				<p>Well, here it is: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, ullam, ducimus, eaque, ex autem est dolore illo similique quasi unde sint rerum magnam quod amet iste dolorem ad laudantium molestias enim quibusdam inventore totam fugit eum iusto ratione alias deleniti suscipit modi quis nostrum veniam fugiat debitis officiis impedit ipsum natus ipsa. Doloremque, id, at, corporis, libero laborum architecto mollitia molestiae maxime aut deserunt sed perspiciatis quibusdam praesentium consectetur in sint impedit voluptates! Deleniti, sequi voluptate recusandae facere nostrum?</p>    
+			</div>
+			<div class="col-sm-4">
+				<h5><strong>More, more lipsum!<br></strong></h5>    
+				<p>Tempore, eos, voluptatem minus commodi error aut eaque neque consequuntur optio nesciunt quod quibusdam. Ipsum, voluptatibus, totam, modi perspiciatis repudiandae odio ad possimus molestias culpa optio eaque itaque dicta quod cupiditate reiciendis illo illum aspernatur ducimus praesentium quae porro alias repellat quasi cum fugiat accusamus molestiae exercitationem amet fugit sint eligendi omnis adipisci corrupti. Aspernatur.</p>    
+				<h5><strong>Author links<br></strong></h5>    
+				<p><a href="http://be.net/pozhilov9409">Behance</a> / <a href="https://twitter.com/serggg">Twitter</a> / <a href="http://linkedin.com/pozhilov">LinkedIn</a> / <a href="https://www.facebook.com/pozhilov">Facebook</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="themes">
+	<div class="container">
+	
+		<h2 class="text-center title">More Themes</h2>
+		<p class="lead text-center">
+			Huge thank you to all people who publish<br>
+			their photos at <a href="http://unsplash.com">Unsplash</a>, thank you guys!
+		</p>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="../static/assets/screenshots/sshot1.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="../static/assets/screenshots/sshot4.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2">
+				<div class="thumbnail">
+					<img src="../static/assets/screenshots/sshot5.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="thumbnail">
+					<img src="../static/assets/screenshots/sshot3.jpg" alt="">
+					<div class="caption">
+						<h3>Thumbnail label</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque doloribus enim vitae nam cupiditate eius at explicabo eaque facere iste.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container">
+	
+		<h2 class="text-center title">Get in touch</h2>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<p class="lead">Have a question about this template, or want to suggest a new feature?</p>
+				<p>Feel free to email me, or drop me a line in Twitter!</p>
+				<p><b>gt@gettemplate.com</b><br><br></p>
+				<ul class="list-inline list-social">
+					<li><a href="https://twitter.com/serggg" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+					<li><a href="https://github.com/pozhilov" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+					<li><a href="http://linkedin/in/pozhilov" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>    
+
+-->
+
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="../static/assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="../static/assets/js/magister.js"></script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery.js"></script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+
+    <script type=text/javascript>
+      var probability = 9;
+
+      $(function() {
+        var submit_form = function(e) {
+            $.getJSON($SCRIPT_ROOT + '/regression', {
+            d: $('#PlayerName').val()
+          }, function(data) {
+             $('#pphoto').attr("src", data.result[0]);
+             probability = data.result[1];
+             
+ 	     $('#pPTS').attr("src", data.result[2]);
+             $('#pAST').attr("src", data.result[3]);
+             $('#pREB').attr("src", data.result[4]);
+             $('#pMIN').attr("src", data.result[5]);
+             $('#pFG_PCT').attr("src", data.result[6]);
+             $('#pEFF').attr("src", data.result[7]);
+       
+ 	     $('#playername').html("Player:    " + $('#PlayerName').val());
+
+             $('#ill_points').html("Points: The number of points scored by a player.");
+             $('#ill_assists').html("Assists: The number of assists -- passes that lead directly to a made basket -- by a player.");
+             $('#ill_rebounds').html("Rebounds: The total number of rebounds, including both offensive and defensive rebounds, collected by a player.");
+ 	     $('#ill_minutes').html("Minutes: The number of minutes a player has played.");
+	     $('#ill_percentage').html("Field Goal Percentage: The percentage of attempted field goals (including 2 pointers and 3 pointers) that are made. ");
+	     $('#ill_efficiency').html("Efficiency Rating: The NBA's Efficiency Rating is a single number measure of a player's overall contribution (both positive and negative) to a game he plays in. Efficiency = ((Points + Rebounds + Assists + Steals + Blocks) - ((Field Goals Att. - Field Goals Made) + (Free Throws Att. -Free Throws Made) + Turnovers))");
+
+        	if(probability >= 90) {
+        	     $('#comments').html("He could be the next Michael Jordan!");
+        	}
+        	else if(probability>=80){
+        	     $('#comments').html("He has a lot of potential to become a super star!");
+        	} 
+        	else if(probability>=50){
+        	     $('#comments').html("There is a fair amount of chance for him to become a super star.");
+        	}
+        	else if(probability>=33){
+        	     $('#comments').html("His chance of becoming future NBA super star is low.");
+        	}
+        	else {
+        	     $('#comments').html("It is very risky to invest on this player!");
+        	}
+
+
+          });
+          return false;
+        };
+    
+
+        $('#GO').bind('click', submit_form);
+
+        $( "#GO" ).click(function() {
+          $( "#Page1" ).animate({
+            opacity: 0.25,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+
+          $( "#GO" ).animate({
+            opacity: 0.25,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+
+        });
+
+
+      });
+    </script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["gauge"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Likelihood', 0],
+        ]);
+
+        var options = {
+          width: 800, height: 240,
+          redFrom: 0, redTo: 33,
+          yellowFrom:33, yellowTo: 67,
+          greenFrom: 67, greenTo: 100,
+          minorTicks: 5,
+          animation:{
+            duration: 3000,
+            easing: 'linear',
+          },
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          data.setValue(0, 1, probability);
+          chart.draw(data, options);
+        }, 3000);
+
+
+      }
+    </script>
+
+
+<div id="Page2" class="container">
+  <div class="transbox">
+
+  <div class="insidebox">
+
+    <hr class="featurette-divider">   
+
+    <div class="row featurette">
+ 
+         <h2 class="featurette-heading">Profile: </h2>
+        
+	<div class="col-md-5">
+		<p><img id="pphoto" src= alt=""></p>
+	</div>
+ 	 <div class="col-md-7">
+		 <p class="lead" id=playername></p>
+	</div>
+    </div>
+
+    <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+         	 <h2 class="featurette-heading">Likelihood: </h2>
+
+         	 <div class="col-md-8">
+         	     <!-- <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>  -->
+         	     <p class="lead" style="font-size:120%">(the relative chance of the player getting into an all-star team compared with his peers.)</p>
+ 		     <p class="lead"></p>
+		     <p class="lead" id="comments"></p>
+                     <!-- Looks like this player has a pretty good chance of growing into a super star! --> 
+         	 </div>
+
+       		 <div class="col-md-4">
+       		   <body>
+       		       <!--Div that will hold the dashboard-->
+       		       <div id="dashboard_div">
+       		         <!--Divs that will hold each control and chart-->
+       		       <div id="chart_div" style="width: 800px; height: 240px;"></div>
+                       </div>
+       		   </body>
+       		</div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- <hr class="featurette-divider"> -->
+
+    <!-- <div align="center"> -->
+    <!-- <p><img id="pperform" src= alt="" align="middle"></p> -->
+    <!-- </div> -->
+
+    <div class="row featurette">
+      <h2 class="featurette-heading">Performance (per game): </h2>
+
+       <!-- <p><img src = "../static/images/pts_dist.jpg" width="390" height="280" alt="" /> <img src = "../static/images/ast_dist.jpg" width="390" height="280" alt="" /> <img src = "../static/images/reb_dist.jpg" width="390" height="280" alt="" />
+      </p>  -->
+       
+        <div class="col-md-7">
+                 <p><img id="pPTS" src= alt="" width="500" height="360"></p>
+        </div>
+
+        <div class="col-md-5">
+                <p class="lead2" id=ill_points></p>
+        </div>
+
+
+
+        <div class="col-md-7">
+                 <p><img id="pAST" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <p class="lead2" id=ill_assists></p>
+        </div>
+
+
+         <div class="col-md-7">
+                 <p><img id="pREB" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <p class="lead2" id=ill_rebounds></p>
+         </div>
+
+
+         <div class="col-md-7">
+                 <p><img id="pMIN" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <p class="lead2" id=ill_minutes></p>
+         </div>
+
+
+
+         <div class="col-md-7">
+                 <p><img id="pFG_PCT" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <p class="lead2" id=ill_percentage></p>
+         </div>
+
+
+
+         <div class="col-md-7">
+                 <p><img id="pEFF" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <p class="lead2" id=ill_efficiency></p>
+         </div>
+
+
+   </div>
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+    <script type="text/javascript">
+      $(function() {
+        $("#Page2").hide();
+        $("#comments").hide();
+        $( "#GO" ).click(function() {
+         $("#Page2").show();
+        setInterval(function() {
+          $("#comments").show();
+        }, 2500);
+        });
+    
+    });
+
+    </script>
+
+
+
+</body>
+</html>
