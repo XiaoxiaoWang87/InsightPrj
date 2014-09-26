@@ -56,7 +56,9 @@ def regression():
 
     #print df[p_profile]
 
-    url = ""
+    url = "no"
+    pid = "0"
+    p = -1
     for i, row in df[p_profile].iterrows():
         if p_name == row["FULLNAME"]:
             url = row["URL"]

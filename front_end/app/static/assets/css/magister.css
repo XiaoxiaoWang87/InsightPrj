@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,900,700);
+
 html {
 	background:#505D6E url(../images/mjkb.png) no-repeat center center fixed; 
 	min-height:100%;
@@ -18,6 +20,25 @@ body {
 	color:#fff;
 	color:rgba(255,255,255,0.8); 
         font-weight: bold;
+}
+
+/* Titles */
+h2, h4, h5, h6 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 900;
+    color: #333;
+}
+
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+input{
+    width: 230px;
+    height: 200px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 
@@ -102,10 +123,12 @@ body {
 
 div.transbox {
     width: 1050px;
-    height: 3500px;
+    height: 3550px;
     margin: 30px 50px;
     background-color: #ffffff;
     border: 1px solid black;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     opacity: 0.95;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
@@ -158,16 +181,18 @@ div.homepage {
 a { color:#fff; text-decoration: none; }
 a:hover, a:active { color:#fff; text-decoration: underline; }
 .lead { 
-	font-weight:normal;
-	font-size:1.5em;
-	line-height:1.2em;
+
+        font-family: 'Ruda', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        margin-top: -15px;
 }
 
 .lead2 {
-        font-weight:normal;
-        font-size:1.3em;
-        line-height:1.2em;
-        margin-top:50px;
+	font-family: 'Ruda', sans-serif;
+        font-weight: 400;
+        font-size: 23px;
+        margin-top: -15px;
 }
 
 
@@ -222,6 +247,12 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
         font-weight: bold;
 }
 
+.btn-back {
+        padding:10px 20px;
+        font-size:1.4em;
+        font-weight: bold;
+}
+
 .btn-link {
 	color:rgba(255,255,255,.8);
 }
@@ -236,9 +267,13 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 }
 .btn-primary {
 	background: rgba(255,255,255,.2);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
 	background: rgba(255,255,255,.5);
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
 }
 
 
@@ -287,7 +322,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .myDropDown
 {
-   height: 40px;
+   height: 50px;
    overflow-y: scroll;
 }
 
@@ -397,6 +432,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	background: rgba(0,0,0,.3);
 	color:#fff;
 }
+
 
 .theme-invert .thumbnail {
 	background-color: rgba(255,255,255,.8);
