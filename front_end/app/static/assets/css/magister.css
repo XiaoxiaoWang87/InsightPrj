@@ -12,7 +12,6 @@ html {
 body {
 	background:transparent;
 	min-height:100%; 	
-	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.5em;
 	font-size:18px;
@@ -36,7 +35,7 @@ p{
 
 input{
     width: 230px;
-    height: 200px;
+    height: 140px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
 }
@@ -230,7 +229,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 /*                   UI - Buttons                       */
 /********************************************************/
 .btn{
-	color:#333;
+	color:#fff
 	text-shadow: none;
 	text-decoration: none;
 	-webkit-border-radius: 3px;
@@ -239,43 +238,45 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	border:0 none;
 }
 .btn:hover {
-	color:#000;
+	color:#0080ff;
 }
 .btn-lg { 
-	padding:18px 30px;
-	font-size:1.4em;
+	padding:12px 16px;
+	font-size:1.0em;
         font-weight: bold;
 }
 
 .btn-back {
-        padding:10px 20px;
-        font-size:1.4em;
-        font-weight: bold;
+        font-size:1.0em;
+	font-weight: bold;
 }
 
 .btn-link {
-	color:rgba(255,255,255,.8);
+	color:rgba(0, 128, 255,1);
 }
 .btn-link:hover, .btn-link:focus, .btn-link:active {
 	color:#fff
 }
 .btn-default {
-	background: rgba(255,255,255,.5);
+	background: rgba(0, 128, 255,1); 
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-	background: rgba(255,255,255,.8);
+	background: rgba(0, 128, 255,1); 
 }
 .btn-primary {
-	background: rgba(255,255,255,.2);
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
+	background: rgba(0, 128, 255,1); 
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
-	background: rgba(255,255,255,.5);
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
+	background: rgba(0, 128, 255,1); 
 }
 
+
+.btn-secondary {
+        background: rgba(0, 128, 255,0.9);
+}
+.btn-secondary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+        background: rgba(0, 128, 255,0.9); 
+}
 
 
 /********************************************************/
@@ -322,7 +323,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 
 .myDropDown
 {
-   height: 50px;
+   height: 40px;
    overflow-y: scroll;
 }
 
@@ -381,7 +382,7 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#000;
 }
 .theme-invert .btn {
-	color:rgba(255,255,255,.8);
+	color: rgba(255,255,255,.8); 
 }
 .theme-invert .btn:hover {
 	color:#fff;
@@ -423,13 +424,13 @@ a:hover, a:active { color:#fff; text-decoration: underline; }
 	color:#fff;
 }
 .theme-invert .btn-primary {
-	background: rgba(0,0,0,.6);
+	background:rgba(0, 128, 255,1);  
 }
 .theme-invert .btn-primary:hover,
 .theme-invert .btn-primary:focus,
 .theme-invert .btn-primary:active,
 .theme-invert .btn-primary.active {
-	background: rgba(0,0,0,.3);
+	background: rgba(0, 128, 255,1); 
 	color:#fff;
 }
 
