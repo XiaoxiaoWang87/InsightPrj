@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="dropdown">
 			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> --> 
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 				<li><a href="#head" class="active">Hello</a></li>
 				<li><a href="#about">About me</a></li>
@@ -45,11 +45,9 @@
 <!-- Main (Home) section -->
 <!-- <section class="section" id="head"> -->
 	<!-- <div class="container"> -->
-
 		<div class="row">
        			<!-- <div id="Page1" class="container">  -->
 			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
-                                
 				<!-- Site Title, your name, HELLO msg, etc. -->
 				<h1 class="title">The Rising NBA All<span style="font-size:40%">&#9733;</span>Star</h1>
 				<!-- <h2 class="subtitle">Free html5 template by GetTemplate</h2> -->
@@ -224,7 +222,7 @@
                 $('#ill_rebounds').html("<u><b>Rebounds:</b></u> The total number of rebounds, including both offensive and defensive rebounds, collected by a player.");
  	        $('#ill_minutes').html("<u><b>Minutes:</b></u> The number of minutes a player has played.");
 	        $('#ill_percentage').html("<u><b>Field Goal Percentage:</b></u> The percentage of attempted field goals (including 2 pointers and 3 pointers) that are made. ");
-	        $('#ill_efficiency').html("<u><b>Efficiency Rating:</b></u> The NBA's Efficiency Rating is a single number measure of a player's overall contribution (both positive and negative) to a game he plays in. Efficiency = ((Points + Rebounds + Assists + Steals + Blocks) - ((Field Goals Att. - Field Goals Made) + (Free Throws Att. -Free Throws Made) + Turnovers))");
+	        $('#ill_efficiency').html("<u><b>Efficiency Rating:</b></u> <p>A single number measure of a player's overall contribution (both positive and negative) to a game he plays in.</p><br><p style='font-size:80%'>Efficiency = ((Points + Rebounds + Assists + Steals + Blocks) - ((Field Goals Att. - Field Goals Made) + (Free Throws Att. -Free Throws Made) + Turnovers))</p>");
 
         	if(probability >= 90) {
         	     $('#comments').html("<b>The next super star! Sign him soon.</b>");
@@ -370,7 +368,11 @@
 
   <div class="insidebox">
 
-    <p><a id ='BACK' class="btn btn-primary btn-back">Back</a></p>
+    <p style="text-align:right">
+	<!--<span style="float:left">-->
+        <a id ='BACK' class="btn btn-secondary btn-back">Back</a> <!--</span>-->
+        <a class="btn btn-secondary btn-back" href="../static/slides.html">Learn More</a>
+    </p>
 
     <hr class="featurette-divider">   
 
@@ -510,7 +512,11 @@
 <div id="Page3" class="container">
   <div class="transbox">
   <div class="insidebox">
-    <p><a id ='BACK3' class="btn btn-primary btn-back">Back</a></p>
+    <p style="text-align:right">
+        <!--<span style="float:left">-->
+        <a id ='BACK3' class="btn btn-secondary btn-back">Back</a> <!--</span>-->
+        <a class="btn btn-secondary btn-back" href="../static/slides.html">Learn More</a>
+    </p>
     <br>
     <p class="lead">Sorry! The player entered was not drafted in 2013. Please try again.</p>
   </div>
