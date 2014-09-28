@@ -64,6 +64,21 @@ def regression():
             url = row["URL"]
             pid = row["PERSONID"]
 
+
+    height = ""
+    weight = ""
+    born = ""
+    p_bib = "player_bibliography"
+    cur[p_bib]  = db.cursor(mdb.cursors.DictCursor)
+    cur[p_bib].execute("SELECT PERSON_ID,PLAYERCODE,HEIGHT,WEIGHT,BORN FROM bibliography;")
+    df[p_bib] = pd.DataFrame( cur[p_bib].fetchall() )
+
+    for i, row in df[p_bib].iterrows():
+        if pid == row["PERSON_ID"]:
+            height = row["HEIGHT"]
+            weight = row["WEIGHT"]
+            born = row["BORN"]
+
     p_frac = "player_fraction"
     cur[p_frac] = db.cursor(mdb.cursors.DictCursor)
     cur[p_frac].execute("SELECT Player_ID,Score FROM score;")
@@ -161,7 +176,7 @@ def regression():
     ploc['FG_PCT'] = "static/images/Performance/FG_PCT_"+str(pid)+".jpg"
     ploc['EFF'] = "static/images/Performance/EFF_"+str(pid)+".jpg"
     print url,pid,p,n1,n2,n3
-    return jsonify(result=[url,p, ploc['PTS'], ploc['AST'], ploc['REB'], ploc['MIN'], ploc['FG_PCT'], ploc['EFF'], d1, d2, d3, n1, n2, n3])
+    return jsonify(result=[url,p,ploc['PTS'], ploc['AST'], ploc['REB'], ploc['MIN'], ploc['FG_PCT'], ploc['EFF'], d1, d2, d3, n1, n2, n3, height, weight, born])
 
 
 
