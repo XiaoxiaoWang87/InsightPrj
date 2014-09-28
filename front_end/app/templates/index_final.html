@@ -214,14 +214,19 @@
              		$('#psim2name').html(data.result[12]);
              		$('#psim3name').html(data.result[13]);
              	}
+      
+                $('#playerheight').html("<u><b>Height: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[14]);
+                $('#playerweight').html("<u><b>Weight: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[15]);
+                $('#playerbirth').html("<u><b>Date of Birth: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[16]);
 
- 	        $('#playername').html("Name:    " + $('#PlayerName').val());
 
-                $('#ill_points').html("<u><b>Points:</b></u> The number of points scored by a player.");
-                $('#ill_assists').html("<u><b>Assists:</b></u> The number of assists -- passes that lead directly to a made basket -- by a player.");
-                $('#ill_rebounds').html("<u><b>Rebounds:</b></u> The total number of rebounds, including both offensive and defensive rebounds, collected by a player.");
- 	        $('#ill_minutes').html("<u><b>Minutes:</b></u> The number of minutes a player has played.");
-	        $('#ill_percentage').html("<u><b>Field Goal Percentage:</b></u> The percentage of attempted field goals (including 2 pointers and 3 pointers) that are made. ");
+ 	        $('#playername').html("<u><b>Name: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + $('#PlayerName').val());
+
+                $('#ill_points').html("<u><b>Points:</b></u> <p>The number of points scored by a player.</p>");
+                $('#ill_assists').html("<u><b>Assists:</b></u> <p>The number of assists -- passes that lead directly to a made basket -- by a player.</p>");
+                $('#ill_rebounds').html("<u><b>Rebounds:</b></u> <p>The total number of rebounds, including both offensive and defensive rebounds, collected by a player.</p>");
+ 	        $('#ill_minutes').html("<u><b>Minutes:</b></u> <p>The number of minutes a player has played.</p>");
+	        $('#ill_percentage').html("<u><b>Field Goal Percentage:</b></u> <p>The percentage of attempted field goals (including 2 pointers and 3 pointers) that are made.</p>");
 	        $('#ill_efficiency').html("<u><b>Efficiency Rating:</b></u> <p>A single number measure of a player's overall contribution (both positive and negative) to a game he plays in.</p><br><p style='font-size:80%'>Efficiency = ((Points + Rebounds + Assists + Steals + Blocks) - ((Field Goals Att. - Field Goals Made) + (Free Throws Att. -Free Throws Made) + Turnovers))</p>");
 
         	if(probability >= 90) {
@@ -384,7 +389,10 @@
 		<p><img id="pphoto" src= alt=""></p>
 	</div>
  	 <div class="col-md-7">
-		 <p class="lead" id=playername></p>
+		 <p class="lead" id=playername style="font-size:120%"></p>
+                 <p class="lead" id=playerheight style="font-size:120%"></p>
+                 <p class="lead" id=playerweight style="font-size:120%"></p>
+                 <p class="lead" id=playerbirth style="font-size:120%"></p>
 	</div>
     </div>
 
@@ -519,6 +527,8 @@
     </p>
     <br>
     <p class="lead">Sorry! The player entered was not drafted in 2013. Please try again.</p>
+    <br>
+    <p><img src="../static/images/dog.jpg"></p>
   </div>
   </div>
 </div>
