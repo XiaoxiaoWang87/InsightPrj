@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<!-- <title>Magister - Free html5 template by GetTemplate</title>  -->
+        <title>The Rising NBA All-star</title>
+
+	<!-- <link rel="shortcut icon" href="static/assets/images/gt_favicon.png"> -->
+	<link rel="shortcut icon" href="static/assets/images/NBA_AllStar_Game_2014.png">
+	<!-- Bootstrap itself -->
+	<!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+        <link href="static/dist/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="static/assets/css/magister.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> --> 
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Hello</a></li>
+				<li><a href="#about">About me</a></li>
+				<li><a href="#themes">Themes</a></li>
+				<li><a href="#contact">Get in touch</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="Page1" class="homepage">
+<!-- Main (Home) section -->
+<!-- <section class="section" id="head"> -->
+	<!-- <div class="container"> -->
+		<div class="row">
+       			<!-- <div id="Page1" class="container">  -->
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">The Rising NBA All<span style="font-size:40%"><a href="../static/slides.html" id ='magic'>&#9733;</a></span>Star</h1>
+				<!-- <h2 class="subtitle">Free html5 template by GetTemplate</h2> -->
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline">
+					A web app that predicts NBA rookie players' likelihood of becoming future super stars.<br>
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<!-- <p><a id ='GO' class="btn btn-default btn-lg">I'm curious about rookie NBA player: </a></p> -->
+ 				<p><a id ='GO' class="btn btn-primary btn-lg">I'm curious about NBA rookie player: </a></p>
+ 
+                        <!-- </div> -->
+                        <!-- </div> -->
+			<!-- <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">-->
+                                <input type="text" id="PlayerName" class = "myDropDown" list="player-datalist" placeholder="e.g. Adams, Steven">
+				<!-- <Panel ID="Panel1" STYLE="width: 200px; height: 100px; overflow: scroll;"> -->
+                                <datalist id="player-datalist">
+                		<!-- <select id = 'PlayerName' class="form-control">  -->
+                                   <option value="Adams, Steven">
+                                   <option value="Antetokounmpo, Giannis">
+                                   <option value="Antic, Pero">
+                                   <option value="Babb, Chris">
+                                   <option value="Bennett, Anthony">
+                                   <option value="Blue, Vander">
+                                   <option value="Brown, Lorenzo">
+                                   <option value="Bullock, Reggie">
+                                   <option value="Burke, Trey">
+                                   <option value="Buycks, Dwight">
+                                   <option value="Calathes, Nick">
+                                   <option value="Caldwell-Pope, Kentavious">
+                                   <option value="Canaan, Isaiah">
+                                   <option value="Carter-Williams, Michael">
+                                   <option value="Christmas, Dionte">
+                                   <option value="Clark, Ian">
+                                   <option value="Covington, Robert">
+                                   <option value="Crabbe, Allen">
+                                   <option value="Curry, Seth">
+                                   <option value="Daniels, Troy">
+                                   <option value="Datome, Gigi">
+                                   <option value="Davies, Brandon">
+                                   <option value="Dedmon, Dewayne">
+                                   <option value="Dellavedova, Matthew">
+                                   <option value="Dieng, Gorgui">
+                                   <option value="Edwards, Shane">
+                                   <option value="Faverani, Vitor">
+                                   <option value="Felix, Carrick">
+                                   <option value="Franklin, Jamaal">
+                                   <option value="Gobert, Rudy">
+                                   <option value="Goodwin, Archie">
+                                   <option value="Gutierrez, Jorge">
+                                   <option value="Hamilton, Justin">
+                                   <option value="Hardaway Jr., Tim">
+                                   <option value="Harris, Elias">
+                                   <option value="Hill, Solomon">
+                                   <option value="Hopson, Scotty">
+                                   <option value="Hummel, Robbie">
+                                   <option value="Jerrett, Grant">
+                                   <option value="Karasev, Sergey">
+                                   <option value="Kelly, Ryan">
+                                   <option value="Kuzmic, Ognjen">
+                                   <option value="Larkin, Shane">
+                                   <option value="Ledo, Ricky">
+                                   <option value="Len, Alex">
+                                   <option value="McCallum, Ray">
+                                   <option value="McCollum, CJ">
+                                   <option value="McLemore, Ben">
+                                   <option value="Mekel, Gal">
+                                   <option value="Mitchell, Tony">
+                                   <option value="Mitchell, Tony">
+                                   <option value="Muhammad, Shabazz">
+                                   <option value="Murphy, Erik">
+                                   <option value="Murry, Toure">
+                                   <option value="Muscala, Mike">
+                                   <option value="Nedovic, Nemanja">
+                                   <option value="Noel, Nerlens">
+                                   <option value="Nunnally, James">
+                                   <option value="Oladipo, Victor">
+                                   <option value="Olynyk, Kelly">
+                                   <option value="Onuaku, Arinze">
+                                   <option value="Plumlee, Mason">
+                                   <option value="Porter, Otto">
+                                   <option value="Pressey, Phil">
+                                   <option value="Raduljica, Miroslav">
+                                   <option value="Rice Jr., Glen">
+                                   <option value="Roberson, Andre">
+                                   <option value="Schroder, Dennis">
+                                   <option value="Siva, Peyton">
+                                   <option value="Smith, Chris">
+                                   <option value="Snell, Tony">
+                                   <option value="Southerland, James">
+                                   <option value="Stephens, DJ">
+                                   <option value="Thomas, Adonis">
+                                   <option value="Thompson, Hollis">
+                                   <option value="Ware, Casper">
+                                   <option value="Withey, Jeff">
+                                   <option value="Wolters, Nate">
+                                   <option value="Zeller, Cody">
+                                </datalist>
+				<!--</Panel>-->
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	<!-- </div> -->
+<!-- </section>  -->
+</div>
+
+
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="../static/assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="../static/assets/js/magister.js"></script>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery.js"></script>
+    <script src="static/dist/js/bootstrap.min.js"></script>
+
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+
+    <script type=text/javascript>
+        var probability = 0;
+        var sanity ="no";
+
+        var submit_form = function(e) {
+
+            $.getJSON( $SCRIPT_ROOT + '/regression',{d: $('#PlayerName').val()}, function(data) {
+
+             	$('#pphoto').attr("src", data.result[0]);
+             	probability = data.result[1];
+             	sanity = data.result[0];            
+
+ 	     	$('#pPTS').attr("src", data.result[2]);
+             	$('#pAST').attr("src", data.result[3]);
+             	$('#pREB').attr("src", data.result[4]);
+             	$('#pMIN').attr("src", data.result[5]);
+             	$('#pFG_PCT').attr("src", data.result[6]);
+             	$('#pEFF').attr("src", data.result[7]);
+       
+             	if (data.result[8] == ""){
+	     	   $('#psim1name').html("<b>No Matches Found.</b>")
+	     	   $('#psim2name').html("")
+	     	   $('#psim3name').html("")
+	     	   $('#psim1photo').attr("src", data.result[8]);
+	     	   $('#psim2photo').attr("src", data.result[9]);
+	     	   $('#psim3photo').attr("src", data.result[10]);
+	     	}
+             	else{
+             		$('#psim1photo').attr("src", data.result[8]);
+             		$('#psim2photo').attr("src", data.result[9]);
+             		$('#psim3photo').attr("src", data.result[10]);
+            
+             		$('#psim1name').html(data.result[11]);
+             		$('#psim2name').html(data.result[12]);
+             		$('#psim3name').html(data.result[13]);
+             	}
+      
+                $('#playerheight').html("<u><b>Height: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[14]);
+                $('#playerweight').html("<u><b>Weight: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[15]);
+                $('#playerbirth').html("<u><b>Date of Birth: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + data.result[16]);
+
+
+ 	        $('#playername').html("<u><b>Name: </b></u> &nbsp&nbsp&nbsp&nbsp&nbsp" + $('#PlayerName').val());
+
+                $('#ill_points').html("<u><b>Points:</b></u> <p>The number of points scored by a player.</p>");
+                $('#ill_assists').html("<u><b>Assists:</b></u> <p>The number of assists -- passes that lead directly to a made basket -- by a player.</p>");
+                $('#ill_rebounds').html("<u><b>Rebounds:</b></u> <p>The total number of rebounds, including both offensive and defensive rebounds, collected by a player.</p>");
+ 	        $('#ill_minutes').html("<u><b>Minutes:</b></u> <p>The number of minutes a player has played.</p>");
+	        $('#ill_percentage').html("<u><b>Field Goal Percentage:</b></u> <p>The percentage of attempted field goals (including 2 pointers and 3 pointers) that are made.</p>");
+	        $('#ill_efficiency').html("<u><b>Efficiency Rating:</b></u> <p>A single number measure of a player's overall contribution (both positive and negative) to a game he plays in.</p><br><p style='font-size:80%'>Efficiency = ((Points + Rebounds + Assists + Steals + Blocks) - ((Field Goals Att. - Field Goals Made) + (Free Throws Att. -Free Throws Made) + Turnovers))</p>");
+
+        	if(probability >= 90) {
+        	     $('#comments').html("<b>The next super star! Sign him soon.</b>");
+        	}
+        	else if(probability>=80){
+        	     $('#comments').html("<b>This player has a lot of potential!</b>");
+        	} 
+        	else if(probability>=50){
+        	     $('#comments').html("<b>This player is doing a good job.</b>");
+        	}
+        	else if(probability>=33){
+        	     $('#comments').html("<b>This player does not seem to play very well.</b>");
+        	}
+        	else {
+        	     $('#comments').html("<b>It is very risky to invest on this player!</b>");
+        	}
+
+
+          $( "#Page1" ).animate({
+            opacity: 1,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+
+          $( "#GO" ).animate({
+            opacity: 1,
+            left: "+=50",
+            height: "toggle"
+          }, 500, function() {
+            // Animation complete.
+          });
+
+
+          if(sanity=="no"){
+               $("#Page3").show();
+               console.log("hello")
+          }
+          else{
+               $("#Page2").show();
+               setInterval(function() {
+                 $("#comments").show();
+               }, 2500);
+          }
+
+
+
+
+        }); //getJSON end
+
+
+
+          return false;
+        }; // submitform end
+
+
+
+
+      $(function() {
+       		 $("#Page2").hide();
+       		 $("#comments").hide();
+       		 $("#Page3").hide();
+
+
+       		 $( "#GO" ).click(function() {
+       		   submit_form();
+       		 });
+
+
+       		 $( "#BACK" ).click(function() {
+       		     $("#Page2").hide();
+       		     $("#Page1").show();
+       		     $("#GO").show();
+       		 });
+
+                 $( "#BACK3" ).click(function() {
+                     $("#Page3").hide();
+                     $("#Page1").show();
+                     $("#GO").show();
+                 });
+
+
+
+
+      });
+
+      //$('#BACK').bind('click', submit_form);
+
+
+
+
+
+
+	
+    </script>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["gauge"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Percentile', 0],
+        ]);
+
+        var options = {
+          width: 800, height: 240,
+          redFrom: 0, redTo: 33,
+          yellowFrom:33, yellowTo: 67,
+          greenFrom: 67, greenTo: 100,
+          minorTicks: 5,
+          animation:{
+            duration: 3000,
+            easing: 'linear',
+          },
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          data.setValue(0, 1, probability);
+          chart.draw(data, options);
+        }, 3000);
+
+
+      }
+    </script>
+
+
+<div id="Page2" class="container">
+  <div class="transbox">
+
+  <div class="insidebox">
+
+    <p style="text-align:right">
+	<!--<span style="float:left">-->
+        <a id ='BACK' class="btn btn-secondary btn-back">Back</a> <!--</span>-->
+        <a class="btn btn-secondary btn-back" href="../static/slides.html">Learn More</a>
+    </p>
+
+    <hr class="featurette-divider">   
+
+    <div class="row featurette">
+ 
+         <h2 class="featurette-heading">Player Profile: </h2>
+        
+	<div class="col-md-5">
+		<p><img id="pphoto" src= alt=""></p>
+	</div>
+ 	 <div class="col-md-7">
+		 <p class="lead" id=playername style="font-size:120%"></p>
+                 <p class="lead" id=playerheight style="font-size:120%"></p>
+                 <p class="lead" id=playerweight style="font-size:120%"></p>
+                 <p class="lead" id=playerbirth style="font-size:120%"></p>
+	</div>
+    </div>
+
+    <hr class="featurette-divider">
+
+      <div class="row featurette">
+
+         	 <h2 class="featurette-heading">Likelihood *: </h2>
+
+         	 <div class="col-md-8">
+		     <br>
+         	     <p class="lead" style="font-size:120%">* the relative chance of getting into the all-star team compared to players drafted in the same year.</p>
+ 		     <br>
+		     <br>
+		     <p class="lead" id="comments"></p>
+         	 </div>
+
+       		 <div class="col-md-4">
+       		   <body>
+       		       <div id="dashboard_div">
+       		       <div id="chart_div" style="width: 800px; height: 240px;"></div>
+                       </div>
+       		   </body>
+       		</div>
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+
+        <h2 class="featurette-heading">He Plays Like (historical all-stars): </h2>
+	<br>
+        <div class="col-md-4">
+                <p><img id="psim1photo" src= alt=""></p>
+                <p class="lead" id=psim1name></p>
+        </div>
+        <div class="col-md-4">
+                <p><img id="psim2photo" src= alt=""></p>
+ 		<p class="lead" id=psim2name></p>
+        </div>
+        <div class="col-md-4">
+                <p><img id="psim3photo" src= alt=""></p>
+		<p class="lead" id=psim3name></p>
+        </div>
+
+    </div>
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <h2 class="featurette-heading">Performance (per game average): </h2>
+       
+        <div class="col-md-7">
+                 <p><img id="pPTS" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+		<br>
+		<br>
+                <p class="lead2" id=ill_points></p>
+        </div>
+
+
+        <div class="col-md-7">
+                 <p><img id="pAST" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <br>
+                <br>
+                <p class="lead2" id=ill_assists></p>
+        </div>
+
+
+         <div class="col-md-7">
+                 <p><img id="pREB" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <br>
+                <br>
+                <p class="lead2" id=ill_rebounds></p>
+         </div>
+
+
+         <div class="col-md-7">
+                 <p><img id="pMIN" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <br>
+                <br>
+                <p class="lead2" id=ill_minutes></p>
+         </div>
+
+
+
+         <div class="col-md-7">
+                 <p><img id="pFG_PCT" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <br>
+                <br>
+                <p class="lead2" id=ill_percentage></p>
+         </div>
+
+
+
+         <div class="col-md-7">
+                 <p><img id="pEFF" src= alt="" width="500" height="360"></p>
+        </div>
+        <div class="col-md-5">
+                <br>
+                <br>
+                <p class="lead2" id=ill_efficiency></p>
+         </div>
+
+   </div>
+   </div>
+  </div>
+
+</div>
+
+
+<div id="Page3" class="container">
+  <div class="transbox">
+  <div class="insidebox">
+    <p style="text-align:right">
+        <!--<span style="float:left">-->
+        <a id ='BACK3' class="btn btn-secondary btn-back">Back</a> <!--</span>-->
+        <a class="btn btn-secondary btn-back" href="../static/slides.html">Learn More</a>
+    </p>
+    <br>
+    <p class="lead">Sorry! The player entered was not drafted in 2013. Please try again.</p>
+    <br>
+    <p><img src="../static/images/dog.jpg"></p>
+  </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
